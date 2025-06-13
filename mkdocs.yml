@@ -1,0 +1,70 @@
+site_name: Astro's hacking forum
+site_author: Astro
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  favicon: favicon-32x32.png
+  logo: favicon-32x32.png
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep-orange
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: "Fira Sans"
+    code: "Fira Code"
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - Reversing: reversing.md
+  - Forensics: forensics.md
+  - HackTheBox WriteUps: walkthroughs.md
+
+extra_css:
+  - overrides/extra.css
+
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: false
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+copyright: |
+  &copy; 2025 <a href="https://github.com/Astroo18" target="_blank" rel="noopener">Astro</a>
