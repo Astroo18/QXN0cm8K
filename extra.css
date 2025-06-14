@@ -1,0 +1,70 @@
+/* Light mode (neutral) */
+.md-typeset h1 {
+  color: #555555;
+  border-bottom: 2px solid #777777;
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h2 {
+  color: #666666;
+  border-left: 4px solid #888888;
+  padding-left: 0.5em;
+}
+
+.md-typeset h3 {
+  color: #777777;
+}
+
+.md-typeset h4 {
+  color: #888888;
+}
+
+.md-typeset h5 {
+  color: #999999;
+}
+
+.md-typeset h6 {
+  color: #aaaaaa;
+}
+
+/* Dark mode (colorful but soft) */
+@media (prefers-color-scheme: dark) {
+  .md-typeset h1 {
+    color: #82aaff;  /* Soft sky blue */
+    border-bottom: 2px solid #82aaff;
+  }
+  
+  .md-typeset h2 {
+    color: #ff7eb6;  /* Gentle pink */
+    border-left: 4px solid #ff7eb6;
+    padding-left: 0.5em;
+  }
+  
+  .md-typeset h3 {
+    color: #ffb86c;  /* Warm amber */
+  }
+  
+  .md-typeset h4 {
+    color: #50fa7b;  /* Mild green */
+  }
+  
+  .md-typeset h5 {
+    color: #f1fa8c;  /* Soft yellow */
+  }
+  
+  .md-typeset h6 {
+    color: #bd93f9;  /* Lavender purple */
+  }
+
+  /* Hover effect: subtle glow */
+  .md-typeset h1:hover,
+  .md-typeset h2:hover,
+  .md-typeset h3:hover,
+  .md-typeset h4:hover,
+  .md-typeset h5:hover,
+  .md-typeset h6:hover {
+    filter: brightness(1.2);
+    text-shadow: 0 0 8px currentColor;
+    transition: all 0.4s ease;
+  }
+}
